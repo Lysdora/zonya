@@ -1,0 +1,559 @@
+/* ------------------------------------------------------------------------------ */
+
+
+/* Fonts */
+
+
+/*
+   font-family: 'Lato', sans-serif;
+font-family: 'Sorts Mill Goudy', serif;
+*/
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* BASIC SETUP */
+
+
+/* ------------------------------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Clear Float*/
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* REUSABLE COMPONENTS */
+
+
+/* ------------------------------------------------------------------------------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* HEADER */
+
+
+/* ------------------------------------------------------------------------------ */
+
+header {
+    background-color: #2d2d30;
+    min-height: 100px;
+    padding: 34px 0 35px;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 44px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #d5d5d5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70%;
+    letter-spacing: 3px;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:visited {
+    border-bottom: 2px solid #82c6bf;
+}
+
+
+/* Banner */
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+}
+
+.hero-text-box h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 240px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 240%;
+    font-weight: 300;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+
+.hero-text-box p {
+    margin-top: 31px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
+    font-size: 130%;
+    margin-bottom: 48px;
+}
+
+/* btn */
+
+.button {
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-white:link,
+.btn-white:visited {
+    border: 1px solid white;
+}
+
+.btn-white:hover,
+.btn-white:active {
+    background-color: #82c6bf;
+    border: none;
+}
+
+.btn-grey:link,
+.btn-grey:visited {
+    background-color: #474747;
+}
+
+.btn-blue:link,
+.btn-blue:visited {
+    background-color: #82c6bf;
+}
+
+.btn-bleu:link,
+.btn-bleu:visited {
+    background-color: #82c6bf;
+}
+
+/*
+.btn-bleu:hover,
+.btn-bleu:visited {
+    color: #82c6bf;
+    background-color: #fff;
+    border: 1px solid #82c6bf;
+}
+
+*/
+/* ------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* section features */
+
+.section-features {
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.section-features h2 {
+    text-transform: uppercase;
+    color: #454545;
+    font-size: 150%;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.para-heading {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
+    color: #878787;
+    font-size: 120%;
+    line-height: 60px;
+}
+
+.icon-para img {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 20px;
+}
+
+.section-features h3 {
+    text-transform: uppercase;
+    font-size: 120%;
+    margin-top: 33px;
+    margin-bottom: 19px;
+}
+
+.icon-para {
+    margin-top: 60px;
+}
+
+.para-icon {
+    font-size: 105%;
+    line-height: 25px;
+    color: #8a8a8a;
+    font-weight: 400;
+}
+
+
+/* section product */
+
+.section-product {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.section-product h2 {
+    text-transform: uppercase;
+    color: #454545;
+    font-size: 150%;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    line-height: 60px;
+}
+
+.para-product {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
+    color: #878787;
+    font-size: 120%;
+    line-height: 60px;
+}
+
+.img-product {
+    margin-top: 40px;
+}
+
+.para-img {
+    font-size: 105%;
+    line-height: 30px;
+    color: #8a8a8a;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.btn-blue {
+    margin-left: 20px;
+}
+
+
+/* Section works */
+
+.section-works {
+    background-color: #2d2d30;
+}
+
+.section-works h2 {
+    color: #dadada;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 2.4px;
+}
+
+.section-works p:first-of-type {
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #a4a4a4;
+    font-size: 115%;
+    line-height: 28px;
+    font-style: italic;
+}
+
+.section-works p:last-of-type {
+    color: #a4a4a4;
+    font-size: 90%;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 36px;
+}
+
+.button-works {
+    margin-top: 80px;
+}
+
+
+/* sectiom timeline */
+
+.section-timeline {
+    background-color: #f1f1f1;
+    
+}
+
+.section-timeline h2 {
+    text-align: center;
+    color: #454545;
+    font-size: 150%;
+    line-height: 60px;
+    letter-spacing: 2.4px;
+}
+
+.para-heading-timeline {
+    font-family: 'Sorts Mill Goudy', serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 120%;
+    line-height: 40px;
+    color: #878686;
+}
+
+.customer {
+    background: #fff;
+    text-align: center;
+    padding: 1%;
+   border: 1px solid #dcdcdc;
+    
+    
+}
+
+.color-customer {
+    background-color: #f6f9f9;
+    padding: 2%;
+    border-radius: 3px;
+}
+
+.color-customer h4 {
+    text-transform: uppercase;
+    color: #454545;
+    letter-spacing: 1.4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.color-customer h5 {
+     font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
+    color: #878686;
+    margin-bottom: 10px;
+    font-size: 90%;
+}
+
+.customer p {
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #878686;
+    font-size: italic;
+    line-height: 28px;
+      
+}
+
+/* section blog */
+
+.section-blog {
+    background-color: #f7f7f7;
+}
+
+.section-blog h2 {
+    color: #454545;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+.para-blog {
+    color: #878686;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-stretch: italic;
+    font-size: 120%;
+    line-height: 28px;      
+    
+}
+
+.sub-para-blog {
+    color: #8a8a8a;
+    font-size: 100%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+
+.img-blog {
+    width: 100%;
+    
+}
+
+.blog h3 {
+    color: #454545;
+    font-size: 90%;
+    line-height: 30px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.blog p {
+    color: #8a8a8a;
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 25px;
+    padding: 1%;
+}
+
+.btn-bleu {
+    margin-top: 30px;
+}
+/* section footer */
+
+.section-footer {
+    background-color:#29292C;
+    color: #e8e8e8;
+    font-weight: 100;
+    font-size: 90%;
+    line-height: 22px;
+}
+
+
+
+
+.main-social {
+    list-style-type: none;
+    text-align: right;
+    
+}
+
+.main-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-social li:last-child {
+    margin-right: 0;
+}
+
+
+/* icone */
+
+.ion-social-twitter {
+ color: #55acee;
+
+}
+
+.ion-social-facebook {
+    color: #3b5998;
+}
+
+.ion-social-googleplus {
+    color: #dd4b39;
+}
+
+.ion-social-pinterest {
+    color: #cb2027;
+}
+
+.ion-social-dribbble {
+    color: #ea4c89
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
